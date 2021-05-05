@@ -1,0 +1,74 @@
+.flight__time {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 5px 0;
+}
+
+.flight__time-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flight__time * {
+  margin: 0;
+}
+
+.flight__time-departure,
+.flight__time-arrival {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+}
+
+.flight__time-total {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url(../../img/clock.svg);
+    left: -20px;
+    top: 1px;
+  }
+}
+
+.flight__time-departure {
+  padding: 0 5px 0 0;
+}
+
+.flight__time-arrival {
+  padding: 0 0 0 5px;
+}
+
+.flight__time-date {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #0087c9;
+}
+
+.flight__time-underline {
+  position: relative;
+  border: none;
+  height: 1px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.flight__legs {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: -18px;
+  width: 120px;
+  background-color: #fff;
+  color:#FFB168;
+}
+
+.flight__legs-position {
+  margin-bottom: -18px;
+}
